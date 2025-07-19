@@ -11,6 +11,7 @@
   --font-poppins: "Poppins", sans-serif;
   --font-inter: "Inter", sans-serif;
   --font-roboto: "Roboto", sans-serif;
+  --font-normal: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
@@ -29,6 +30,10 @@ body {
   background-color: var(--bg-color);
   color: var(--primary-color);
   line-height: 1.5;
+}
+
+#main > section {
+  margin-top: 6rem;
 }
 
 a {
@@ -73,6 +78,11 @@ li {
 }
 
 /* Header Area Styles */
+.header-area {
+  background-color: var(--text-gray);
+}
+
+/* Navbar Area */
 .navbar-area {
   justify-content: space-between;
   align-items: center;
@@ -107,6 +117,7 @@ li {
   cursor: pointer;
 }
 
+/* Banner Area */
 .banner-area {
   justify-content: space-between;
   align-items: center;
@@ -142,4 +153,75 @@ li {
   max-width: 50%;
   background: url(../assets/images/Circle-design.svg) no-repeat bottom left /
     contain;
+}
+
+/* Company Area Styles */
+.company-area {
+  padding: 0.5rem 0;
+}
+
+.company-cards {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 2.5rem;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #e02c6e25;
+}
+
+/* Collection Area Styles */
+.collection-area h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+  font-weight: var(--font-semi-bold);
+}
+
+.collection-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.collection-card {
+  padding: 1.825rem;
+  box-shadow: 0px 3px 7px 0px #ddd;
+  border-radius: 0.5rem;
+}
+
+.collection-card h4 {
+  font-size: 1.75rem;
+  font-weight: var(--font-medium);
+  margin: 0.5rem 0;
+}
+
+.collection-card h6 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-family: var(--font-inter);
+  font-weight: var(--font-normal);
+  margin-bottom: 0.5rem;
+}
+
+.collection-card .rating {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.collection-card .rating span {
+  color: #5e6366;
+  font-size: 0.8rem;
+  font-family: var(--font-roboto);
+  font-weight: var(--font-bold);
+}
+
+.collection-card h5,
+.collection-card small {
+  color: #787885;
+  font-size: 0.875rem;
+  font-family: var(--font-inter);
+  font-weight: var(--font-bold);
 }
