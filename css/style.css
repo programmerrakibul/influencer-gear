@@ -28,7 +28,7 @@ body {
   font-family: var(--font-poppins);
   background-color: var(--bg-color);
   color: var(--primary-color);
-  line-height: 1.3em;
+  line-height: 1.5;
 }
 
 a {
@@ -58,9 +58,14 @@ li {
   font-size: 1rem;
   font-weight: var(--font-bold);
   font-family: var(--font-poppins);
-  padding: 0.59rem 1.9rem;
+  padding: 0.625rem 1.5rem;
   cursor: pointer;
   border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
 }
 
 .flex {
@@ -68,10 +73,6 @@ li {
 }
 
 /* Header Area Styles */
-.header-area {
-  min-height: 100vh;
-}
-
 .navbar-area {
   justify-content: space-between;
   align-items: center;
@@ -104,4 +105,41 @@ li {
   width: 1.25rem;
   height: 1.25rem;
   cursor: pointer;
+}
+
+.banner-area {
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 4.5rem 0;
+}
+
+.banner-content {
+  max-width: 50%;
+  flex: 1;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: var(--font-bold);
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2rem;
+}
+
+.banner-content button {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 2.5rem;
+}
+
+.banner-img {
+  display: flex;
+  max-width: 50%;
+  background: url(../assets/images/Circle-design.svg) no-repeat bottom left /
+    contain;
 }
