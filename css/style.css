@@ -150,9 +150,11 @@ li {
 
 .banner-img {
   display: flex;
-  max-width: 50%;
+  width: 50%;
+  max-width: 440px;
   background: url(../assets/images/Circle-design.svg) no-repeat bottom left /
     contain;
+  padding: 1.75rem;
 }
 
 /* Company Area Styles */
@@ -261,4 +263,47 @@ li {
 
 .feature-content button {
   width: fit-content;
+}
+
+/* Footer Area Styles */
+.footer-area {
+  padding: 3.125rem 0;
+  background-color: #0a0826;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 305px;
+  margin: 0 auto;
+}
+
+.footer-logo-area {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-brand {
+  max-width: 243px;
+}
+
+.footer-logo-area span {
+  color: var(--text-gray);
+  font-size: 0.875rem;
+  font-weight: var(--font-bold);
+}
+
+.footer-social {
+  margin-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-social a {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  background-color: #22213c;
+  border-radius: 50%;
 }
