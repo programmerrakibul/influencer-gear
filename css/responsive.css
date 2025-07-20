@@ -1,8 +1,117 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .company-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .collection-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .banner-area,
+  .feature-container {
+    flex-direction: column-reverse;
+  }
+
+  .banner-content,
+  .banner-img,
+  .feature-content,
+  .feature-img {
+    width: 100%;
+  }
+
+  .banner-content,
+  .feature-content {
+    text-align: center;
+  }
+
+  .banner-content button,
+  .feature-content button {
+    margin: 0 auto;
+  }
+
+  .banner-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .banner-content p {
+    font-size: 0.875rem;
+  }
+
+  .company-cards {
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .collection-area h2,
+  .feature-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .collection-container {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-card {
+    text-align: center;
+  }
+
+  .collection-card .rating {
+    margin: 0 auto;
+  }
+
+  .feature-img {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  .banner-img {
+    max-width: 250px;
+  }
+
+  .company-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-brand {
+    width: 162px;
+  }
+
+  .footer-logo-area span {
+    font-size: 0.75rem;
+  }
+
+  .footer-social a {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.375rem;
+  }
 }
