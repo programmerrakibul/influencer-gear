@@ -33,7 +33,7 @@ body {
 }
 
 #main > section {
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 
 a {
@@ -83,7 +83,7 @@ li {
 }
 
 /* Navbar Area */
-.navbar-area {
+.navbar {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 0;
@@ -269,6 +269,7 @@ li {
 .footer-area {
   padding: 3.125rem 0;
   background-color: #0a0826;
+  margin-top: 7rem;
 }
 
 .footer-container {
